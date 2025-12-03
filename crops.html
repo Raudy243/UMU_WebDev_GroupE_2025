@@ -1,105 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link rel="stylesheet" href="styles/general.css" />
-    <link rel="stylesheet" href="styles/crops.css" />
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="header">
-      <h3 class="logo">Farm</h3>
-      <nav class="navbar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="crops.html" class="active">Crops</a></li>
-          <li><a href="animals.html">Animals</a></li>
-          <li><a href="machines.html">Machines</a></li>
-          <li><a href="contact.html">Contact us</a></li>
-        </ul>
-      </nav>
-      <div class="header-actions">
-        <div class="cart-icon">
-          <i class="fas fa-shopping-bag"></i>
-          <span class="cart-count">0</span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crops</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="crop.css" />
+  <link rel="stylesheet" href="styles/crops.css" />
+  <link rel="shortcut icon" href="crop-img/fa.avif" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Headerandnas -->
+  <header class=" head">
+    <div class="head d-flex">
+    
+      <div class="d-flex align-items-center gap-2">
+        <img src="crop-img/fa.avif" class="icon" alt="logo">
+        <a class="logo" href="#">ModernHome</a>
+      </div>
+
+      <nav class="navbar navbar-expand-lg mt-3">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-4">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="crops.html">Crops</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="animals.html">Animals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="machines.html">Machines</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
         </div>
+      </nav>
+
+      
+      <div class="header-actions d-flex align-items-center gap-3">
+        <div class="cart-icon position-relative">
+          <i class="fas fa-shopping-bag fs-4"></i>
+          <span
+            class="cart-count position-absolute top-0 start-100 translate-middle badge bg-warning text-dark">0</span>
+        </div>
+
         <a href="index.html" class="btn btn-primary">Visit Now</a>
       </div>
-    </header>
+    </div>
+  </header>
+  
+  <!-- open -->
+  <header class="hero d-flex ">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Fresh. Local. Organic.</h1>
+      <p class="lead my-3">
+        Shop our seasonal produce and pantry staples —<br />
+        harvested with love from the family farm.
+      </p>
+      <div class="btn-group mt-3">
+        <button class="btn btn-warning px-4" onclick="goToShop()">Shop Now</button>
+        <button class="btn btn-outline-dark px-4" onclick="goToWeeklyBox()">Weekly Farm Box</button>
+      </div>
+    </div>
+  </header>
 
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis placeat
-      iure debitis? Quae nostrum laboriosam fugiat architecto voluptas
-      necessitatibus nisi, iusto est? Expedita tenetur provident labore autem
-      quod? Ab, harum.
-    </p>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-brand">
-            <h4>AuraBag</h4>
-            <p>
-              Because you deserve only the best ModenFarm is here to get you
-              what you deserve
-            </p>
-            <div class="social-links">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-pinterest"></i></a>
-            </div>
+  <!-- tpyes -->
+  <h1 class="text-center p-3">OUR CROPS</h1>
+
+  <div class="container">
+    <div class="row gy-4">
+
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <img src="crop-img/cas.avif" class="card-img-top" alt="Cassava">
+          <div class="card-body">
+            <h5 class="card-title">Cassava</h5>
+            <p class="card-text">Cassava is rarely eaten raw and must be properly peeled and cooked to remove naturally
+              occurring toxins.</p>
+            <a href="#" class="btn btn-primary w-100" onclick="goToShop()">The Produce</a>
           </div>
-          <div class="footer-links">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="shop.html">Shop</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer-links">
-            <h4>Student info</h4>
-            <ul>
-              <li><a href="#">Bulungu</a></li>
-              <li><a href="#">Kalemba</a></li>
-              <li><a href="#">Audry</a></li>
-              <li><a href="#">2025-B291-22469</a></li>
-            </ul>
-          </div>
-          <div class="footer-support">
-            <h4>Support</h4>
-            <ul>
-              <li><a href="#">Shipping Policy</a></li>
-              <li><a href="#">Returns & Exchanges</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
-            </ul>
-          </div>
-          <div class="footer-contact">
-            <h4>Contact Us</h4>
-            <ul>
-              <li>
-                <i class="fas fa-map-marker-alt"></i> 123 Fashion Ave, New York,
-                NY
-              </li>
-              <li><i class="fas fa-phone"></i> (555) 123-4567</li>
-              <li><i class="fas fa-envelope"></i> hello@ModernFarm.com</li>
-            </ul>
-          </div>
-        </div>
-        <div class="copyright">
-          &copy; 2025 ModernFarm. All Rights Reserved.
         </div>
       </div>
-    </footer>
-  </body>
+
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <img src="crop-img/crop7.avif" class="card-img-top" alt="Corn">
+          <div class="card-body">
+            <h5 class="card-title">Corn</h5>
+            <p class="card-text">A tall cereal grass grown for its edible kernels.</p>
+            <button class="btn btn-primary w-100" onclick="goToShop()">The Produce</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <img src="crop-img/ban.avif" class="card-img-top" alt="Plantain">
+          <div class="card-body">
+            <h5 class="card-title">Plantain</h5>
+            <p class="card-text">A starchy fruit from the banana family, usually cooked before eating.</p>
+            <button class="btn btn-primary w-100" onclick="goToShop()">The Produce</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <img src="crop-img/cof.avif" class="card-img-top" alt="Coffee">
+          <div class="card-body">
+            <h5 class="card-title">Coffee</h5>
+            <p class="card-text">Coffee cherries contain seeds that are processed into coffee beans.</p>
+            <button class="btn btn-primary w-100" onclick="goToShop()">The Produce</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <img src="crop-img/ber.avif" class="card-img-top" alt="Berries">
+          <div class="card-body">
+            <h5 class="card-title">Berries</h5>
+            <p class="card-text">Small, juicy fruits that typically contain many seeds.</p>
+            <button class="btn btn-primary w-100" onclick="goToShop()">The Produce</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- weeksupply -->
+
+  <section id="weekly-box" class="py-5 bg-warning text-dark">
+    <div class="container">
+      <h2 class=" w mb-3">Weekly Farm Box</h2>
+      <p class="w">Get a curated selection of fresh seasonal produce delivered to your door every week. Perfect for
+        healthy meals and supporting local farming!</p>
+
+      <div class="row g-4 mt-4">
+
+
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <img src="crop-img/eg.avif" class="card-img-top" alt="Vegetables">
+            <div class="card-body">
+              <h5 class="card-title">Fresh Vegetables</h5>
+              <p class="card-text">Tomatoes, carrots, leafy greens — all organically grown and fresh from the farm.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <img src="crop-img/fru.avif" class="card-img-top" alt="Fruits">
+            <div class="card-body">
+              <h5 class="card-title">Seasonal Fruits</h5>
+              <p class="card-text">Apples, berries, peaches, and other fruits chosen for the season’s best flavors.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <img src="crop-img/gl.avif" class="card-img-top" alt="Pantry Items">
+            <div class="card-body">
+              <h5 class="card-title">Farm Pantry Items</h5>
+              <p class="card-text">Optional staples like grains, legumes, or local honey to complete your weekly box.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-4">
+        <button class="btn btn-dark rounded-pill px-4" id="add-weekly-box-btn">
+          Add Weekly Box
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- shop -->
+
+  <section class="shop py-5 bg-light" id="shop">
+    <div class="container">
+      <h3 class="text-center mb-4">Shop Favorites</h3>
+      <div class="row g-4 justify-content-center">
+
+
+
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="card product-card h-100 shadow-sm">
+            <div class="position-relative">
+              <img src="crop-img/ch.avif" alt="Cassava Chips" class="card-img-top " />
+              <span
+                class="sale-badge position-absolute top-0 start-0 bg-warning text-white px-2 py-1 fw-bold">SALE</span>
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title mb-1">Cassava Chips 1kg</h6>
+
+              <div class="price mb-2">
+                <span class="original-price text-muted text-decoration-line-through">$5.00</span> <span
+                  class="sale-price fw-bold">$4.20</span>
+              </div>
+              <button class="btn btn-outline-warning btn-sm w-100 add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="card product-card h-100 shadow-sm">
+            <img src="crop-img/flour.avif" alt="Corn Flour" class="card-img-top " />
+            <div class="card-body text-center">
+              <h6 class="card-title mb-1">Corn Flour 1kg</h6>
+
+              <div class="price mb-2">$5.99</div>
+              <button class="btn btn-outline-warning btn-sm w-100 add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="card product-card h-100 shadow-sm">
+            <img src="crop-img/ban2.avif" alt="Fried Plantain" class="card-img-top " />
+            <div class="card-body text-center">
+              <h6 class="card-title mb-1">Fried Plantain 1kg</h6>
+
+              <div class="price mb-2">$10.99</div>
+              <button class="btn btn-outline-warning btn-sm w-100 add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="card product-card h-100 shadow-sm">
+            <div class="position-relative">
+              <img src="crop-img/egg.avif" alt="Free-Range Eggs" class="card-img-top " />
+              <span
+                class="sale-badge position-absolute top-0 start-0 bg-warning text-white px-2 py-1 fw-bold">SALE</span>
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title mb-1">Free-Range Eggs 1kg</h6>
+
+              <div class="price mb-2">
+                <span class="original-price text-muted text-decoration-line-through">$5.00</span> <span
+                  class="sale-price fw-bold">$4.70</span>
+              </div>
+              <button class="btn btn-outline-warning btn-sm w-100 add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="card product-card h-100 shadow-sm">
+            <div class="position-relative">
+              <img src="crop-img/coffee.avif" alt="Organic Coffee" class="card-img-top " />
+              <span
+                class="sale-badge position-absolute top-0 start-0 bg-warning text-white px-2 py-1 fw-bold">SALE</span>
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title mb-1">Organic Coffee 1kg</h6>
+
+              <div class="price mb-2">
+                <span class="original-price text-muted text-decoration-line-through">$5.00</span> <span
+                  class="sale-price fw-bold">$4.20</span>
+              </div>
+              <button class="btn btn-outline-warning btn-sm w-100 add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="card product-card h-100 shadow-sm">
+            <img src="crop-img/bery.avif" alt="Sweet Berries" class="card-img-top " />
+            <div class="card-body text-center">
+              <h6 class="card-title mb-1">Sweet Berries 1kg</h6>
+
+              <div class="price mb-2">$5.99</div>
+              <button class="btn btn-outline-warning btn-sm w-100 add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="card product-card h-100 shadow-sm">
+            <img src="crop-img/pe.avif" alt="Organic Peach" class="card-img-top " />
+            <div class="card-body text-center">
+              <h6 class="card-title mb-1">Organic Peach 1kg</h6>
+
+              <div class="price mb-2">$5.99</div>
+              <button class="btn btn-outline-warning btn-sm w-100 add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="card product-card h-100 shadow-sm">
+            <img src="crop-img/bells.avif" alt="Bell Pepper" class="card-img-top " />
+            <div class="card-body text-center">
+              <h6 class="card-title mb-1">Bell Pepper 1kg</h6>
+
+              <div class="price mb-2">$5.99</div>
+              <button class="btn btn-outline-warning btn-sm w-100 add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-4">
+        <button class="btn btn-warning rounded-pill px-4">Browse All Products</button>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h4>AuraBag</h4>
+          <p>
+            Because you deserve only the best ModernFarm is here to get you
+            what you deserve
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Student info</h4>
+          <ul>
+            <li><a href="#">NINA</a></li>
+            <li><a href="#">NAMATA</a></li>
+            <li>
+            <li><a href="#">2025-B291-20492</a></li>
+          </ul>
+        </div>
+        <div class="footer-support">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> 123 Fashion Ave, New York,
+              NY
+            </li>
+            <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+            <li><i class="fas fa-envelope"></i> hello@ModernFarm.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2025 ModernFarm. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+  <script src="crop.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>
+
+
+
+
+
+
+
+
+
