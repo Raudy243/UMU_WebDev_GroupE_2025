@@ -1,0 +1,32 @@
+body{
+    background-color: wheat;
+}
+.bg-img{
+    background-image: url('../home-img/pic1.jpg');
+}
+.img9{
+ height: 100px;
+ width: 200px;
+ border-top-left-radius: 80%;
+ border-bottom: 5px solid white ;
+}
+.img5{
+ height: 100px;
+ width: 200px;
+ border-top-right-radius: 80% ;
+ border-bottom: 5px solid white ;
+}
+.img11{
+ height: 100px;
+ width: 200px;
+ border-bottom-left-radius: 80%;
+}
+.img6{
+ height: 100px;
+ width: 200px;
+ border-bottom-right-radius: 80%;
+}
+.card{
+  border-radius:12px;
+  }
+
