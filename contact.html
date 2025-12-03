@@ -33,19 +33,271 @@
       </div>
     </header>
 
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis placeat
-      iure debitis? Quae nostrum laboriosam fugiat architecto voluptas
-      necessitatibus nisi, iusto est? Expedita tenetur provident labore autem
-      quod? Ab, harum.
-    </p>
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="hero-content-text">
+          <h2>Stay in touch</h2>
+          <p>
+            We'd love to hear from you. Send us a message and we'll respond as
+            soon as possible!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="contact-container">
+        <div class="contact-layout">
+          <div class="contact-info">
+            <div class="contact-description">
+              <h2>Get in touch</h2>
+              <p>
+                Have questions about our products or need assistance with your
+                order? Reach out to us through any of the channels below.
+              </p>
+            </div>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="method-content">
+                  <h3>Visit Our Store</h3>
+                  <p>123 Fashion Avenue<br />New York, NY 10001</p>
+                  <a href="#" class="method-link"
+                    >Get Directions <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="method-content">
+                  <h3>Call Us</h3>
+                  <p>+1 (555) 123-4567</p>
+                  <a href="tel:+15551234567" class="method-link"
+                    >Call Now <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="method-content">
+                  <h3>Email Us</h3>
+                  <p>hello@ModernFarm.com</p>
+                  <a href="mailto:hello@ModernFarm.com" class="method-link"
+                    >Send Email <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="method-content">
+                  <h3>Avaliable Hours</h3>
+                  <p>
+                    Monday - Friday: 9AM - 8PM<br />Saturday - Sunday: 10AM -
+                    6PM
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-container">
+            <form class="contact-form">
+              <h2>Send Us a Message</h2>
+
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Enter your full name"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="Enter your email address"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                  <option value="">Select a subject</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="product">Product Question</option>
+                  <option value="order">Order Support</option>
+                  <option value="return">Returns & Exchanges</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  required
+                  placeholder="Tell us how we can help you..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-large">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>Quick answers to common questions</p>
+        </div>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What is your return policy?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>
+                  We offer a 30-day return policy for all unused items in their
+                  original packaging. Returns are free for customers in the US.
+                  Items must be in perfect condition with all tags attached.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How long does shipping take?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>
+                  Standard shipping takes 3-5 business days. Express shipping
+                  (1-2 business days) is available for an additional fee.
+                  International shipping typically takes 7-14 business days
+                  depending on the destination.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Do you ship internationally?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>
+                  Yes, we ship to over 50 countries worldwide. International
+                  shipping costs and delivery times vary by location. Customs
+                  fees and import taxes are the responsibility of the customer
+                  and are not included in the shipping cost.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Can I track my order?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>
+                  Yes, once your order ships, you'll receive a tracking number
+                  via email to monitor your package's journey. You can also
+                  track your order by logging into your account on our website.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What payment methods do you accept?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>
+                  We accept all major credit cards (Visa, MasterCard, American
+                  Express), PayPal, Apple Pay, and Google Pay. All payments are
+                  processed securely through encrypted channels.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Do you offer warranty on your products?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>
+                  All ModernFarm products come with a 1-year warranty against
+                  manufacturing defects. This covers issues with zippers,
+                  stitching, and hardware. Normal wear and tear are not covered
+                  under the warranty.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-img-container">
+        <div class="card-img"></div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="site-footer">
       <div class="container">
         <div class="footer-content">
           <div class="footer-brand">
-            <h4>AuraBag</h4>
+            <h4>ModernFarm</h4>
             <p>
               Because you deserve only the best ModenFarm is here to get you
               what you deserve
@@ -101,5 +353,6 @@
         </div>
       </div>
     </footer>
+    <script src="contact.js"></script>
   </body>
 </html>
