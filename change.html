@@ -15,30 +15,46 @@
 </head>
 
 <body>
-  <!-- Header -->
-  <header class="header">
-    <img src="./home-img/050hh42021_9999-19326.jpg" class="icon" type="logo">
-    <h3 class="logo">Modern Farms</h3>
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="crops.html">Crops</a></li>
-        <li><a href="animals.html">Animals</a></li>
-        <li><a href="machines.html">Machines</a></li>
-        <li><a href="contact.html">Contact us</a></li>
-      </ul>
-    </nav>
-    <div class="header-actions">
-      <div class="cart-icon">
-        <i class="fas fa-shopping-bag"></i>
-        <span class="cart-count">0</span>
+
+  <!-- Header / Navbar -->
+  <header class="bg-white shadow-sm">
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="./home-img/050hh42021_9999-19326.jpg" alt="Modern Farms logo" width="48" height="48"
+          class="me-2 rounded-circle">
+        <span class="h5 mb-0">Modern Farms</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="crops.html">Crops</a></li>
+          <li class="nav-item"><a class="nav-link" href="animals.html">Animals</a></li>
+          <li class="nav-item"><a class="nav-link" href="machines.html">Machines</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+        </ul>
+
+        <div class="d-flex align-items-center ms-3">
+          <div class="position-relative me-3">
+            <i class="fas fa-shopping-bag fa-lg"></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-count">0</span>
+          </div>
+          <a href="index.html" class="btn btn-primary">Visit Now</a>
+        </div>
       </div>
-      <a href="index.html" class="btn btn-primary">Visit Now</a>
-    </div>
+    </nav>
   </header>
+
   <!-- Hero -->
-  <section class="frm py-5 bg-light">
-    <div class=" container text-center">
+  <section class="py-5 bg-light">
+    <div class="container text-center">
       <h1 class="display-4 fw-bold">MODERN FARMS</h1>
       <p class="lead fst-italic mb-4">Cultivating tomorrow's food today, fresh right from the future.</p>
 
@@ -81,7 +97,7 @@
       <div class="row row-cols-1 row-cols-md-4 g-4">
         <div class="col">
           <div class="card h-100">
-            <img src="./home-img/pic10.avif"  style="height: 176px;" class="card-img-top img-fluid" alt="Crops">
+            <img src="./home-img/pic10.avif" class="card-img-top img-fluid" alt="Crops">
             <div class="card-body">
               <h5 class="card-title">Crops</h5>
               <p class="card-text">We deal in the growing of various types of crops such as fruits and vegetables. They
@@ -114,7 +130,7 @@
 
         <div class="col">
           <div class="card h-100">
-            <img src="./home-img/pic8.png"  style="height: 176px;" class="card-img-top img-fluid" alt="Laboratories">
+            <img src="./home-img/pic8.png" class="card-img-top img-fluid" alt="Laboratories">
             <div class="card-body">
               <h5 class="card-title">Laboratories</h5>
               <p class="card-text">We also carry out research in different fields so as to find better breeds or crop
@@ -186,7 +202,7 @@
     </div>
   </footer>
 
-  <!-- Bootstrap JS for navbar toggler -->
+  <!-- Bootstrap JS bundle (needed for navbar toggler) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-cVKIPhG81rK/2QZ8nFfKxZHZG5Q5yYfXnE6E1Zr3/tzN1dQzZq5a2mW1yXrV6q3K"
     crossorigin="anonymous"></script>
