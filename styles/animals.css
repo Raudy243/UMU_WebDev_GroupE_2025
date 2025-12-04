@@ -154,8 +154,8 @@ body, html {
   padding: 10px 15px;
   border-radius: 7px;
   cursor: pointer;
-  margin-top: 20px;
   text-decoration: none;
+  position: relative;
 }
 .button:hover {
   background-color: rgba(0, 123, 255, 0.7);;
