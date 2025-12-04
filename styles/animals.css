@@ -146,7 +146,7 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  margin-bottom: 50px;
+  gap: 50px;
 }
 .button {
   background-color: white;
