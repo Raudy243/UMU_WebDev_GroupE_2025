@@ -24,8 +24,13 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* height: 70px; */
   padding: 20px 50px;
   transition: all 0.3s ease;
+}
+
+.navbar li {
+  list-style: none;
 }
 
 .navbar a {
