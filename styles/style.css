@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .icon{
     width: 50px;
   height: 50px;
@@ -7,10 +12,11 @@
     margin-left: -10rem;
 }
 body{
+    margin-top: 0%;
     background-color: wheat;
 }
-.bg-img{
-    background-image: url('../home-img/pic1.jpg');
+.frm{
+    background-image: url('../home-img/pic4.avif');
 }
 .img9{
  height: 100px;
