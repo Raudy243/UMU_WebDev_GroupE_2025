@@ -1,5 +1,13 @@
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-left: -2rem;
+}
+.logo {
+  margin-left: -10rem;
+}
 body {
-  background-color: darkcyan;
+  background-color: wheat;
   padding-top: 7%;
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
@@ -25,8 +33,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* height: 70px; */
   padding: 20px 50px;
   transition: all 0.3s ease;
+}
+
+.navbar li {
+  list-style: none;
 }
 
 .navbar a {
@@ -133,7 +146,7 @@ html {
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("//animal-img/hero.webp");
+    url("../animal-img/hero.webp");
   height: 90%;
   background-position: center;
   background-repeat: no-repeat;
@@ -151,13 +164,13 @@ html {
   color: white;
 }
 .button {
-  background-color: white;
+  background-color: rgba;
   color: darkcyan;
   border: none;
   padding: 10px 15px;
   border-radius: 7px;
   cursor: pointer;
-  text-decoration: none;
+  margin-top: 10px;
 }
 .button:hover {
   background-color: rgba(0, 123, 255, 0.7);
@@ -168,6 +181,10 @@ html {
 .button:active {
   transform: translateY(0);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.h1 {
+  color: mediumblue;
 }
 
 /* Slideshow container */
@@ -210,7 +227,7 @@ html {
 }
 
 .text {
-  color: maroon;
+  color: mediumblue;
   font-size: 30px;
   padding: 8px 12px;
   position: absolute;

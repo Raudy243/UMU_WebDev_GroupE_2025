@@ -3,18 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>ModernFarms</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <link rel="stylesheet" href="styles/general.css" />
-    <link rel="stylesheet" href="styles/machines.css" />
+    <link rel="stylesheet" href="./styles/machines.css">
+    <link rel="stylesheet" href="./script.js">
+    <link rel="icon" type="image/png" href="./home-img/farming-machinery.png" />
   </head>
   <body>
     <!-- Header -->
     <header class="header">
-      <h3 class="logo">Modern Farms</h3>
+      <img src="./home-img/050hh42021_9999-19326.jpg"  class="icon">
+      <h3 class="logo">ModernFarm</h3>
       <nav class="navbar">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -32,14 +34,67 @@
         <a href="index.html" class="btn btn-primary">Visit Now</a>
       </div>
     </header>
-
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis placeat
-      iure debitis? Quae nostrum laboriosam fugiat architecto voluptas
-      necessitatibus nisi, iusto est? Expedita tenetur provident labore autem
-      quod? Ab, harum.
-    </p>
-
+    <div class="mill" role="main">
+      <!--mill-->
+       <header class="mill" aria-label="mill banner-AGRICULTURE FARM">
+        <div class="mill-content">
+          <h1>AGRICULTURE FARM</h1>
+          <P class="lead">Agriculture,Gardening $ Landscaping</P>
+          <a class="cta-btn" href="#products">Our services</a>
+        </div>
+       </header>
+    </div>
+    <!--Gallery-->
+    <section id="product-heading" class="section" aria-labelledby="product-heading">
+      <div class="title">
+        <h2 id="product-heading">Machinary $ Tools</h2>
+        <div class="subtitle">Agriculture-leading Hay Equipment</div>
+        <div class="filters" role="toolbar" aria-label="machine filters">
+          <button class="filters-btn" data-category="Tractor">Tractor</button>
+          <button class="filters-btn" data-category="Lime Spreaders">Lime Spreader</button>
+          <button class="filters-btn" data-category="Fluffer Tedders">Fluffer Tedder</button>
+          <button class="filters-btn" data-category="X series Tedders">X series Tedder</button>
+          <button class="filters-btn" data-category="Rotary Rakes">Rotary Rake</button>
+          <button class="filters-btn" data-category="Wheel Rakes">Wheel Rake</button>
+          <button class="filters-btn" data-category="Sprinkler">Sprinkler</button>
+          <button class="filters-btn" data-category="Wheel Loader">Wheel Loader</button>
+          <button class="filters-btn" data-category="Planter">Planter</button>
+        </div>
+        <div class="grid" aria-live="polite">
+          <!--row1-->
+           <div class="card" data-category="Lime spreader">
+            <img src="./machine-img/loren-king-abEF6N5rZhE-unsplash.jpg">
+           </div>
+           <div class="card" data-category="Tractor">
+            <img src="./machine-img/julia-koblitz-SPzzE4TYxZ0-unsplash.jpg">
+           </div>
+           <div class="card" data-category="Fluffer Tedder">
+            <img src="./machine-img/bernd-dittrich-DIHyZXCF-2A-unsplash.jpg">
+           </div>
+           <!--row2-->
+           <div class="card" data-category="X series Tedder">
+            <img src="./machine-img/nikola-tomasic-AWfqkSrROo4-unsplash.jpg">
+           </div>
+           <div class="card" data-category="Rotary Rake">
+            <img src="./machine-img/kelsey-todd-ad0OpigNFPc-unsplash.jpg">
+           </div>
+           <div class="card" data-category="Wheel Rake">
+            <img src="./machine-img/theo-lonic-VkCZJEukKM0-unsplash.jpg">
+           </div>
+           <!--row3-->
+           <div class="card"data-category="Sprinkler">
+            <img src="./machine-img/jason-ng-s-pfpCGNjI8-unsplash.jpg">
+           </div>
+           <div class="card" data-category="Wheel Loader">
+            <img src="./machine-img/ainur-khakimov-_-tP08ThaIc-unsplash.jpg">
+           </div>
+           <div class="card" data-category="Planter">
+            <img src="./machine-img/yansi-keim-ONhOk13JQRM-unsplash.jpg">
+           </div>
+        </div>
+      </div>
+    </section>
+    <div class="bottom-space" aria-hidden="true"></div>
     <!-- Footer -->
     <footer class="site-footer">
       <div class="container">
@@ -69,10 +124,9 @@
           <div class="footer-links">
             <h4>Student info</h4>
             <ul>
-              <li><a href="#">Bulungu</a></li>
-              <li><a href="#">Kalemba</a></li>
-              <li><a href="#">Audry</a></li>
-              <li><a href="#">2025-B291-22469</a></li>
+              <li><a href="#">Lumala</a></li>
+              <li><a href="#">George</a></li>
+              <li><a href="#">2025-B071-22236</a></li>
             </ul>
           </div>
           <div class="footer-support">
@@ -88,10 +142,9 @@
             <h4>Contact Us</h4>
             <ul>
               <li>
-                <i class="fas fa-map-marker-alt"></i> 123 Fashion Ave, New York,
-                NY
+                <i class="fas fa-map-marker-alt"></i> 123 Fashion Ave, Kampala.
               </li>
-              <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+              <li><i class="fas fa-phone"></i> 0758550178</li>
               <li><i class="fas fa-envelope"></i> hello@ModernFarm.com</li>
             </ul>
           </div>
