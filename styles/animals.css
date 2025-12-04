@@ -150,11 +150,9 @@ body, html {
 .button {
   background-color: white;
   color: darkcyan;
-  border: none;
   padding: 10px 15px;
   border-radius: 7px;
   cursor: pointer;
-  text-decoration: none;
 }
 .button:hover {
   background-color: rgba(0, 123, 255, 0.7);;
