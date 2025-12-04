@@ -146,6 +146,7 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  margin-bottom: 50px;
 }
 .button {
   background-color: white;
@@ -154,7 +155,6 @@ body, html {
   padding: 10px 15px;
   border-radius: 7px;
   cursor: pointer;
-  margin-top: 20px;
   text-decoration: none;
 }
 .button:hover {
