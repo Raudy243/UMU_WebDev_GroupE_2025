@@ -331,7 +331,7 @@ img {
   display: flex;
   padding: 20px;
   justify-content: space-between;
-  flex-shrink: 1;
+  flex-wrap: wrap;
 }
 #logo {
   width: 150px;
